@@ -1,0 +1,45 @@
+<!-- Carousel
+ ================================================== -->
+ <div id="portfolio-carousel" class="carousel slide" data-ride="carousel">
+   <!-- Indicators -->
+   <ol class="carousel-indicators">
+     <li data-target="#portfolio-carousel" data-slide-to="0" class="active"></li>
+     <li data-target="#portfolio-carousel" data-slide-to="1"></li>
+     <li data-target="#portfolio-carousel" data-slide-to="2"></li>
+   </ol>
+   <div class="carousel-inner" role="listbox">
+     <div class="item active">
+       <div class="container">
+         <div class="carousel-caption">
+           <h2>Who I am</h2>
+           <p>Hi, my name is Korobova Lena and I love to write code that is efficient.</p>
+         </div>
+       </div>
+     </div>
+     <div class="item">
+       <div class="container">
+         <div class="carousel-caption">
+           <h2>What I do</h2>
+           <p>I am a front-end developer who loves writing code that works well in different environments.</p>
+         </div>
+       </div>
+     </div>
+     <div class="item">
+       <div class="container">
+         <div class="carousel-caption">
+           <h2>What I've done</h2>
+           <p>I am just starting out as a developer, but I already have a few works that I'd be happy to share. Personal projects are what have kept me busy.</p>
+         </div>
+       </div>
+     </div>
+   </div>
+   <a class="left carousel-control" href="#portfolio-carousel" role="button" data-slide="prev">
+     <span class="glyphicon glyphicon-chevron-left" aria-hidden="true"></span>
+     <span class="sr-only">Previous</span>
+   </a>
+   <a class="right carousel-control" href="#portfolio-carousel" role="button" data-slide="next">
+     <span class="glyphicon glyphicon-chevron-right" aria-hidden="true"></span>
+     <span class="sr-only">Next</span>
+   </a>
+ </div>
+ <!-- /.carousel -->

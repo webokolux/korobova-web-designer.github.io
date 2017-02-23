@@ -1,0 +1,15 @@
+angular.module "myApp", ["myApp.directives"]
+
+angular.module("myApp.directives", []).directive "skills", ->
+  restrict: "C"
+  controller: ['$scope', '$element', '$attrs', '$timeout', '$compile', ($scope, $element, $attrs, $timeout, $compile)->
+    angular.forEach $scope.skills, (value, index)->
+      time = (Math.random()*1)+parseFloat($attrs.speed)
+      skill =  $compile("<div id='skills_"+value.language.toLowerCase()+"' style='transition: width "+time+"s; -webkit-transition: width "+time+"s; -o-transition: width "+time+"s; -moz-transition: width "+time+"s; background-color: "+value.color+"'><span>"+value.language+"</span></div>")($scope)
+      $element.append skill
+      $timeout(-> 
+        skill.css({width: value.percentage+'%'})
+      $attrs.timeout)
+  ]
+
+angular.bootstrap document, ['myApp']
